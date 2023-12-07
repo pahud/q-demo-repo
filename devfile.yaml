@@ -37,8 +37,8 @@ commands:
   - id: cdk-init
     exec:
       component: aws-runtime
-      commandLine: "cd ${PROJECT_SOURCE} && [ -f devfile.yaml ] && 
-        ( mv devfile.yaml .devfile.yaml && /usr/bin/cdk init -l typescript && mv .devfile.yaml devfile.yaml )"
+      commandLine: "cd ${PROJECT_SOURCE} && [ -f devfile.yaml ] && [ ! -f README.md ] &&
+        ( mv devfile.yaml .devfile.yaml && /usr/bin/cdk init -l typescript; mv .devfile.yaml devfile.yaml )"
   # run `npx projen new` to initialize the project with projen
   - id: npx-projen-new
     exec:
