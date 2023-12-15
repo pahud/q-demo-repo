@@ -8,11 +8,5 @@ export class QDemoRepoStack extends cdk.Stack {
 
     new sqs.Queue(this, 'Queue');
 
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'QDemoRepoQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
   }
 }
