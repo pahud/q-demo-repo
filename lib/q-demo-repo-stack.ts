@@ -6,7 +6,7 @@ export class QDemoRepoStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    new sqs.Queue(this, 'Queue');
+    new sqs.Queue(this, 'Queue2');
 
   }
 }
