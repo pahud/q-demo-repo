@@ -25,6 +25,8 @@ jobs:
         run: yarn install --check-files
       - name: build
         run: yarn build
+      - name: test
+        run: yarn test
       - name: synth
         run: npx cdk synth -o dist
       - name: Find mutations
