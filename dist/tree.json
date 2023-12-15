@@ -8,13 +8,13 @@
         "id": "QDemoRepoStack",
         "path": "QDemoRepoStack",
         "children": {
-          "Queue": {
-            "id": "Queue",
-            "path": "QDemoRepoStack/Queue",
+          "Queue2": {
+            "id": "Queue2",
+            "path": "QDemoRepoStack/Queue2",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "QDemoRepoStack/Queue/Resource",
+                "path": "QDemoRepoStack/Queue2/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::SQS::Queue",
                   "aws:cdk:cloudformation:props": {}

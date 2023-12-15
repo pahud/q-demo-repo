@@ -1,7 +1,7 @@
 {
   "version": "35.0.0",
   "files": {
-    "8a9e0da475f8807a93faa4a0655a123b7de07829415951dbaafd7e21bc47620b": {
+    "da3857572af860244bb0ba0e5804de6abc81b21f5e7948ab5d55011815a30173": {
       "source": {
         "path": "QDemoRepoStack.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "8a9e0da475f8807a93faa4a0655a123b7de07829415951dbaafd7e21bc47620b.json",
+          "objectKey": "da3857572af860244bb0ba0e5804de6abc81b21f5e7948ab5d55011815a30173.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }
