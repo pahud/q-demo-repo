@@ -18,7 +18,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/8a9e0da475f8807a93faa4a0655a123b7de07829415951dbaafd7e21bc47620b.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/da3857572af860244bb0ba0e5804de6abc81b21f5e7948ab5d55011815a30173.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -34,10 +34,10 @@
         "QDemoRepoStack.assets"
       ],
       "metadata": {
-        "/QDemoRepoStack/Queue/Resource": [
+        "/QDemoRepoStack/Queue2/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "Queue4A7E3555"
+            "data": "Queue26CB7866F"
           }
         ],
         "/QDemoRepoStack/CDKMetadata/Default": [

@@ -1,11 +1,11 @@
 {
  "Resources": {
-  "Queue4A7E3555": {
+  "Queue26CB7866F": {
    "Type": "AWS::SQS::Queue",
    "UpdateReplacePolicy": "Delete",
    "DeletionPolicy": "Delete",
    "Metadata": {
-    "aws:cdk:path": "QDemoRepoStack/Queue/Resource"
+    "aws:cdk:path": "QDemoRepoStack/Queue2/Resource"
    }
   },
   "CDKMetadata": {
