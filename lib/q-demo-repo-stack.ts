@@ -11,7 +11,7 @@ export class QDemoRepoStack extends Stack {
 
     new lambda.Function(this, 'Func', {
       runtime: lambda.Runtime.PYTHON_3_12,
-      code: lambda.Code.fromInline(`def handler(_, _): return`),
+      code: lambda.Code.fromInline(`def handler(e, c): return {"foo":"bar"}`),
       handler: 'index.handler',
     })
 

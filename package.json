@@ -9,6 +9,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
+    "cdk-synth": "npx cdk synth -o dist",
     "publish-assets": "npx cdk-assets publish -p dist/QDemoRepoStack.assets.json"
   },
   "devDependencies": {
