@@ -18,7 +18,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/da3857572af860244bb0ba0e5804de6abc81b21f5e7948ab5d55011815a30173.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/ff06703d130542329e72467d1456773f261c3d3fd5908a3e4aa64562338f02de.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -34,10 +34,16 @@
         "QDemoRepoStack.assets"
       ],
       "metadata": {
-        "/QDemoRepoStack/Queue2/Resource": [
+        "/QDemoRepoStack/Func/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "Queue26CB7866F"
+            "data": "FuncServiceRole49680D06"
+          }
+        ],
+        "/QDemoRepoStack/Func/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Func217E03A4"
           }
         ],
         "/QDemoRepoStack/CDKMetadata/Default": [

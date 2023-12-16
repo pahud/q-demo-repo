@@ -1,12 +1,25 @@
-import * as cdk from 'aws-cdk-lib';
+import {
+  Stack, StackProps, 
+  aws_lambda as lambda,
+} from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import * as sqs from 'aws-cdk-lib/aws-sqs';
+// import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export class QDemoRepoStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+export class QDemoRepoStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    new sqs.Queue(this, 'Queue2');
+    new lambda.Function(this, 'Func', {
+      runtime: lambda.Runtime.PYTHON_3_12,
+      code: lambda.Code.fromInline(`def handler(_, _): return`),
+      handler: 'index.handler',
+    })
 
+    // The code that defines your stack goes here
+
+    // example resource
+    // const queue = new sqs.Queue(this, 'QDemoRepoQueue', {
+    //   visibilityTimeout: cdk.Duration.seconds(300)
+    // });
   }
 }
