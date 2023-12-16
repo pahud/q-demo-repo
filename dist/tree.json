@@ -76,7 +76,7 @@
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
                     "code": {
-                      "zipFile": "def handler(_, _): return"
+                      "zipFile": "def handler(e, c): return {\"foo\":\"bar\"}"
                     },
                     "handler": "index.handler",
                     "role": {
